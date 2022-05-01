@@ -16,10 +16,10 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-// mongoose.connect(MONGODB_URI, {
-//   useNewUrlParser: true,
-//   useFindAndModify: false
-// });
+mongoose.connect(MONGODB_URI, {
+  useNewUrlParser: true,
+  useFindAndModify: false
+});
 
 // routes
 app.use(require("./routes/api.js"));
